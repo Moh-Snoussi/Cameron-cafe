@@ -1,0 +1,147 @@
+/* Menu Section */
+.menu-section {
+  padding: 3rem 2rem 5rem; /* Reduced top padding since header is no longer fixed */
+  background-color: var(--light-color);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.filter-options {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.filter-btn.active {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.coffee-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.coffee-item {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.coffee-item:hover {
+  transform: translateY(-5px);
+}
+
+.coffee-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.coffee-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.coffee-item:hover .coffee-image img {
+  transform: scale(1.05);
+}
+
+.coffee-info {
+  padding: 1.5rem;
+}
+
+.coffee-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.coffee-origin {
+  color: var(--secondary-color);
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.coffee-description {
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.coffee-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coffee-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.add-to-cart-btn {
+  background-color: var(--accent-color);
+  color: var(--dark-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+}
+
+/* Responsive styles for menu */
+@media (max-width: 768px) {
+  .coffee-menu {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .filter-options {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .filter-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+}

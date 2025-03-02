@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/header.css" />
+  <link rel="stylesheet" href="./styles/hero.css" />
+  <link rel="stylesheet" href="./styles/menu.css" />
+  <link rel="stylesheet" href="./styles/cart.css" />
+  <link rel="stylesheet" href="./styles/footer.css" />
+
+  <title>Cameron-Café</title>
+</head>
+
+<body>
+  <div id="app">
+    <div class="coffee-shop">
+      <header class="header">
+        <div class="logo">
+          <h1>Cameron-Café</h1>
+        </div>
+        <div class="language-switcher">
+          <div class="language-flags" id="language-flags">
+            <button class="flag-btn flag-en active" data-lang="en" aria-label="English"></button>
+            <button class="flag-btn flag-th" data-lang="th" aria-label="Thai"></button>
+            <button class="flag-btn flag-ar" data-lang="ar" aria-label="Arabic"></button>
+          </div>
+        </div>
+      </header>
+
+      <section class="hero-section">
+        <div class="hero-content">
+          <h2 class="translate" data-key="heroTitle">Discover the World in Every Cup</h2>
+          <p class="translate" data-key="heroSubtitle">Experience premium coffee from around the globe</p>
+          <div class="cta-buttons">
+            <button class="btn primary translate" data-key="orderNow">Order Now</button>
+            <button class="btn secondary translate" data-key="learnMore">Learn More</button>
+            <button class="btn tertiary translate" data-key="contactUs">Contact Us</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section">
+        <h2 class="section-title translate" data-key="ourMenu">Our Menu</h2>
+        <div class="filter-options">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="hot">Hot Coffee</button>
+          <button class="filter-btn" data-filter="cold">Cold Coffee</button>
+          <button class="filter-btn" data-filter="specialty">Specialty</button>
+        </div>
+        <div class="coffee-menu" id="coffee-menu">
+          <!-- Coffee items will be inserted here -->
+        </div>
+      </section>
+
+      <section class="cart-section">
+        <h2 class="section-title translate" data-key="yourOrder">Your Order</h2>
+        <div class="cart-container">
+          <div class="cart-items" id="cart-items">
+            <!-- Cart items will be inserted here -->
+          </div>
+          <div class="cart-summary">
+            <div class="cart-total">
+              <span class="translate" data-key="total">Total</span>:
+              <span id="cart-total-amount">$0.00</span>
+            </div>
+            <button class="btn primary translate" data-key="checkout" id="checkout-btn">Checkout</button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3 class="translate" data-key="aboutUs">About Us</h3>
+            <p class="translate" data-key="aboutText">Cameron-Café House brings you the finest coffee beans from around
+              the world.</p>
+          </div>
+          <div class="footer-section">
+            <h3 class="translate" data-key="openingHours">Opening Hours</h3>
+            <p>Mon-Fri: 7:00 - 20:00</p>
+            <p>Sat-Sun: 8:00 - 22:00</p>
+          </div>
+          <div class="footer-section">
+            <h3 class="translate" data-key="contact">Contact</h3>
+            <p>Email: changeme@globalcoffeehouse.com</p>
+            <p>Phone: +1 234 567 890</p>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 Cameron-Café.</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
